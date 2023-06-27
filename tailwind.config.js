@@ -14,7 +14,7 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in': 'fadeIn 4s ease-in-out',
+        'fade-in': 'fadeIn 0.5s ease-in-out',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
