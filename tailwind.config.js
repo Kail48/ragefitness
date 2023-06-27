@@ -62,7 +62,7 @@ module.exports = {
           },
         ],
         nav: [
-          "24px",
+          "16px",
           {
             letterSpacing: "0.24px",
           },
