@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Link from "next/link";
 //can define size as in width-sm,md,lg

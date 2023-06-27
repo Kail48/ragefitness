@@ -7,7 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      keyframes: {
+        fadeIn: {
+          '0%': { x: '0%',opacity:0 },
+          '100%': { x: '100%',opacity:100 },
+        },
+      },
+      animation: {
+        'fade-in': 'fadeIn 4s ease-in-out',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
