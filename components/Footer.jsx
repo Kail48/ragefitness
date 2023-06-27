@@ -67,7 +67,7 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="hidden w-screen py-6 bg-black text-white md:flex  justify-center items-center md:flex-row md:justify-around">
+      <div className="hidden w-screen py-6 bg-black text-white md:flex  justify-center items-center md:flex-row md:justify-around ">
         <div className="py-2 w-64 md:w-64 flex flex-col justify-center items-center md:items-start">
           <Image
             height={50}
@@ -83,16 +83,16 @@ export default function Footer() {
         </div>
         <div className="flex-flex-col items-center justify-center font-para text-[16px]">
           <h1 className="font-header mb-4"> QUICKLINKS</h1>
-          {quicklinks.map((link) => (
-            <Link href={link.link}>
+          {quicklinks.map((link,index) => (
+            <Link key={index} href={link.link}>
               <h1 className="">{link.name}</h1>
             </Link>
           ))}
         </div>
         <div className="flex-flex-col font-para text-[16px]">
           <h1 className="font-header mb-4"> PROGRAMS</h1>
-          {programs.map((link) => (
-            <Link href={link.link}>
+          {programs.map((link,index) => (
+            <Link key={index} href={link.link}>
               <h1 className="">{link.name}</h1>
             </Link>
           ))}
@@ -110,8 +110,8 @@ export default function Footer() {
           </div>
           <div className="flex-flex-col font-para text-[16px]">
             <h1 className="font-header mb-4"> ClASSES SCHEDULE</h1>
-            {class_schedule.map((link) => (
-              <Link href={link.link}>
+            {class_schedule.map((link,index) => (
+              <Link key={index} href={link.link}>
                 <h1 className="">{link.name}</h1>
               </Link>
             ))}
@@ -135,16 +135,16 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center justify-center font-para text-[16px]">
           <h1 className="font-header mb-4"> QUICKLINKS</h1>
-          {quicklinks.map((link) => (
-            <Link href={link.link}>
+          {quicklinks.map((link,index) => (
+            <Link key={index} href={link.link}>
               <h1 className="text-center">{link.name}</h1>
             </Link>
           ))}
         </div>
         <div className="flex flex-col items-center justify-center font-para text-[16px]">
           <h1 className="font-header mb-4"> PROGRAMS</h1>
-          {programs.map((link) => (
-            <Link href={link.link}>
+          {programs.map((link,index) => (
+            <Link key={index} href={link.link}>
               <h1 className="text-center">{link.name}</h1>
             </Link>
           ))}
@@ -161,8 +161,8 @@ export default function Footer() {
           </div>
           <div className="flex-flex-col items-center justify-center font-para text-[16px]">
             <h1 className="font-header mb-4 text-center">  ClASSES SCHEDULE</h1>
-            {class_schedule.map((link) => (
-              <Link href={link.link}>
+            {class_schedule.map((link,index) => (
+              <Link key={index} href={link.link}>
                 <h1 className="text-center">{link.name}</h1>
               </Link>
             ))}
