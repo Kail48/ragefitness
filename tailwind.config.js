@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+
   theme: {
     extend: {
       keyframes: {
@@ -12,9 +13,14 @@ module.exports = {
           '0%': { x: '0%',opacity:0 },
           '100%': { x: '100%',opacity:100 },
         },
+        spin: {
+          '0%': { transform: 'rotate(0)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
+        'spin':' 1s ease-in-out'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -56,7 +62,8 @@ module.exports = {
         ],
         para: [
           "16px",
-          {
+          { 
+            lineHeight:'24px',
             letterSpacing: "0.16px",
             fontWeight: "500",
           },

@@ -231,11 +231,11 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
               ))}
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block ">
             <Button
               text="GET 1 WEEK TRIAL PASS"
               isLink={true}
-              link=""
+              to=""
               fill={true}
               size="sm"
             />

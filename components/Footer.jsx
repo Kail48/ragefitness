@@ -82,25 +82,25 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex-flex-col items-center justify-center font-para text-[16px]">
-          <h1 className="font-header mb-4"> QUICKLINKS</h1>
+          <h1 className="font-header mb-2"> QUICKLINKS</h1>
           {quicklinks.map((link,index) => (
             <Link key={index} href={link.link}>
-              <h1 className="">{link.name}</h1>
+              <h1 className="mb-1">{link.name}</h1>
             </Link>
           ))}
         </div>
         <div className="flex-flex-col font-para text-[16px]">
-          <h1 className="font-header mb-4"> PROGRAMS</h1>
+          <h1 className="font-header mb-2"> PROGRAMS</h1>
           {programs.map((link,index) => (
             <Link key={index} href={link.link}>
-              <h1 className="">{link.name}</h1>
+              <h1 className="mb-1">{link.name}</h1>
             </Link>
           ))}
         </div>
         <div className="flex flex-col gap-y-4 ">
           <div className="flex-flex-col font-para text-[16px]">
-            <h1 className="font-header mb-4"> BUSINESS HOURS</h1>
-            <p className="">
+            <h1 className="font-header mb-2"> BUSINESS HOURS</h1>
+            <p className="mb-1">
               Monday - Friday:
               <br /> 08:00AM to 08:00PM <br />
               Saturday: 08:00AM to 02:00PM
@@ -109,10 +109,10 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex-flex-col font-para text-[16px]">
-            <h1 className="font-header mb-4"> ClASSES SCHEDULE</h1>
+            <h1 className="font-header mb-2"> ClASSES SCHEDULE</h1>
             {class_schedule.map((link,index) => (
               <Link key={index} href={link.link}>
-                <h1 className="">{link.name}</h1>
+                <h1 className="mb-1">{link.name}</h1>
               </Link>
             ))}
           </div>
