@@ -12,8 +12,8 @@ import Link from "next/link";
  */
 export default function Button({ text, size, fill, isLink, action, to }) {
   const sizeStyle = {
-    sm: "w-48 h-12 px-4 text-[12px]",
-    md: "w-64 h-14 py-2 px-2 text-[12px]",
+    sm: "w-full h-12 md:w-48 md:h-12 px-4 text-[12px]",
+    md: "w-full h-12 md:w-64 md:h-14 py-2 px-2 text-[12px]",
     lg: "",
   };
   return (

@@ -31,7 +31,7 @@ export default function Hero({
 }) {
   console.log(imageHeight, imageWidth);
   return (
-    <div className="w-full flex px-10 mb-32 justify-center items-center">
+    <div className="w-full md:flex px-10 mb-32 justify-center items-center">
       {isLeft ? (
         <>
           <Image
@@ -44,7 +44,7 @@ export default function Hero({
 
           <div className="px-4 ">
             {header ? (
-              <div className="font-header text-header text-start">
+              <div className="font-header text-header2 md:text-header text-start">
                 <span className="text-red">{header[0]}</span>
                 <br />
                 <span className="text-white">{header[1]}</span>
@@ -53,7 +53,7 @@ export default function Hero({
               <div></div>
             )}
             {subtitle ? (
-              <h1 className="text-start text-header3 text-lightyellow mt-4">
+              <h1 className="text-start md:text-header3 text-sm text-lightyellow mt-4">
                 {subtitle}
               </h1>
             ) : (
@@ -61,7 +61,7 @@ export default function Hero({
             )}
 
             {secondaryHeader ? (
-              <div className="font-header text-header2 text-start text-lightyellow whitespace-nowrap">
+              <div className="font-header leading-6 text-[18px] mt-4 md:text-header2 text-start text-lightyellow whitespace-nowrap">
                 <span className="">{secondaryHeader[0]}</span>
                 <br />
                 <span className="">{secondaryHeader[1]}</span>
@@ -78,7 +78,7 @@ export default function Hero({
             ) : (
               <div></div>
             )}
-            <div className="flex gap-x-6 py-2">
+            <div className="flex flex-col md:flex-row gap-y-4 md:gap-y-0 gap-x-6 py-2">
               <Button
                 text={button1Text}
                 isLink={true}
@@ -102,9 +102,9 @@ export default function Hero({
         </>
       ) : (
         <>
-          <div className="px-4">
+          <div className="md:px-4">
             {header ? (
-              <div className="font-header text-header text-start">
+              <div className="font-header text-header2 md:text-header text-start">
                 <span className="text-red">{header[0]}</span>
                 <br />
                 <span className="text-white">{header[1]}</span>
@@ -113,7 +113,7 @@ export default function Hero({
               <div></div>
             )}
             {subtitle ? (
-              <h1 className="text-start text-header3 text-lightyellow mt-4">
+              <h1 className="text-start md:text-header3 text-sm text-lightyellow mt-4">
                 {subtitle}
               </h1>
             ) : (
@@ -121,7 +121,7 @@ export default function Hero({
             )}
 
             {secondaryHeader ? (
-              <h1 className="text-start text-header2 text-lightyellow mt-4">
+              <h1 className="text-start text-header3 md:text-header2 text-lightyellow mt-4">
                 {secondaryHeader}
               </h1>
             ) : (
@@ -136,7 +136,7 @@ export default function Hero({
             ) : (
               <div></div>
             )}
-            <div className="flex gap-x-6 py-2">
+            <div className="flex flex-col md:flex-row gap-y-4 md:gap-y-0 gap-x-6 py-2">
               <Button
                 text={button1Text}
                 isLink={true}
