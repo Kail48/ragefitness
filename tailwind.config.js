@@ -8,6 +8,9 @@ module.exports = {
 
   theme: {
     extend: {
+      zIndex: {
+        '1000': '1000',
+      },
       keyframes: {
         fadeIn: {
           '0%': { x: '0%',opacity:0 },

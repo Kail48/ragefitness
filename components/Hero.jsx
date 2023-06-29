@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import Button from "./Button";
@@ -31,7 +31,7 @@ export default function Hero({
 }) {
   console.log(imageHeight, imageWidth);
   return (
-    <div className="w-full md:flex px-10 mb-32 justify-center items-center">
+    <div className="w-full md:flex px-10 mt-12 mb-8 md:mb-16 justify-center items-center md:mt-12 bg-black text-white">
       {isLeft ? (
         <>
           <Image
@@ -121,9 +121,11 @@ export default function Hero({
             )}
 
             {secondaryHeader ? (
-              <h1 className="text-start text-header3 md:text-header2 text-lightyellow mt-4">
-                {secondaryHeader}
-              </h1>
+              <div className="font-header leading-6 text-[18px] mt-4 md:text-header2 text-start text-lightyellow whitespace-nowrap">
+                <span className="">{secondaryHeader[0]}</span>
+                <br />
+                <span className="">{secondaryHeader[1]}</span>
+              </div>
             ) : (
               <div></div>
             )}
@@ -144,24 +146,27 @@ export default function Hero({
                 fill={true}
                 size="md"
               />
-              <Button
-                text={button2Text}
-                isLink={true}
-                to="/"
-                fill={false}
-                size="md"
-              />
+              {button2Text ? (
+                <Button
+                  text={button2Text}
+                  isLink={true}
+                  to="/"
+                  fill={false}
+                  size="md"
+                />
+              ) : (
+                <div></div>
+              )}
             </div>
           </div>
           <Image
-          className=""
+            className=""
             src={image}
             alt="image"
             height={imageHeight}
             width={imageWidth}
             priority
           />
-
         </>
       )}
     </div>

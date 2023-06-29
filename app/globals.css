@@ -26,3 +26,6 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.slick-slide.slick-center img {
+  transform: scale(1.2);
+}
