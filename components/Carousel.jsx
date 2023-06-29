@@ -24,7 +24,7 @@ export default function Carousel({ slides }) {
       >
         <Slider className="mx-4 px-16">
           {slides.map((slide, index) => (
-            <Slide index={index}>
+            <Slide key={index} index={index}>
               <Image
                 key={index}
                 src={slide}

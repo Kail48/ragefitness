@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-export default function ()
+export default function FooterHero()
  {
   return (
     <div className='md:my-16'>
