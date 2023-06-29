@@ -6,7 +6,7 @@ import fitnesscardimg from "../public/images/fitnesscardimg.png";
 import boxingcardimg from "../public/images/boxingcardimg.png";
 import kidscardimg from "../public/images/kidscardimg.png";
 import resultscardimg from "../public/images/resultscardimg.png";
-export default function () {
+export default function ClassesSection() {
   const cardsData = [
     {
       text: "STRIKING",
