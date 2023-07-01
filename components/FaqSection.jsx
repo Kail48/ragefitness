@@ -5,7 +5,7 @@ export default function FaqSection({ qnaData }) {
   return (
     <div className="flex flex-col bg-darkblack py-12 mx-2 md:mx-12">
       {qnaData.map((data, index) => (
-        <div className="py-4 md:mx-6 md:my-4">
+        <div key={index} className="py-4 md:mx-6 md:my-4">
           <div className="flex items-center">
             <div className="hidden cursor-pointer mr-8 md:w-12 md:h-12 bg-red rounded-full md:flex justify-center items-center ">
               <Image src={rightArrow} alt="prev" width={20} height={20} />
