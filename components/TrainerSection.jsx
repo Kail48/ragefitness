@@ -13,21 +13,21 @@ import Carousel from "./Carousel";
 export default function TrainerSection() {
   const slides = [
     trainer1,
-    trainer2,
-    trainer3,
-    trainer4,
-    trainer5,
-    trainer6,
-    trainer7,
+    trainer1,
+    trainer1,
+    trainer1,
+    trainer1,
+    trainer1,
+    trainer1,
   ];
   return (
-    <div className="w-screen bg-red text-white py-8 md:py-16">
+    <div className="w-screen bg-red text-white py-12 md:py-16">
       <div className="font-header md:text-6xl text-center leading-10">
-        <span className="text-white">
+        <span className="text-white leading-6">
           {" "}
           OUR AWESOME <br />
         </span>
-        <span className="text-lightyellow"> COACHES AND TRAINERS.</span>
+        <span className="text-lightyellow leading-6"> COACHES AND TRAINERS.</span>
         <p className="font-para text-xs px-4 md:text-para md:px-48 mt-4 md:mt-6 text-center">
           Our coaches are here to meet the needs of everyone regardless of age
           or previous experience. Whether you’re into cardio, yoga, spin,

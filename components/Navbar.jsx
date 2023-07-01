@@ -8,12 +8,16 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
   const [showSubmenu, setShowSubmenu] = useState(false);
   const [tappedMenu, setTappedMenu] = useState(null);
   const [hoveredLink, setHoveredLink] = useState(null);
+  const [location, setLocation] = useState(null);
   const timeoutRef = useRef(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-
+  const isCurrentPage = (link) => {
+    const location = window.location.pathname;
+    console.log(location);
+  };
   const handleMouseEnter = (hovered) => {
     clearTimeout(timeoutRef.current);
     setIsOpen(true);
@@ -92,7 +96,7 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
     },
   ];
   useEffect(() => {
-    console.log(isOpen, "submenu");
+    setLocation(window.location.pathname);
   }, [isOpen]);
   return (
     <nav className="bg-black">

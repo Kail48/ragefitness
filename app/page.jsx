@@ -9,7 +9,32 @@ import Loading from "./loading";
 import ClassesSection from "@/components/ClassesSection";
 import TrainerSection from "@/components/TrainerSection";
 import FooterHero from "@/components/FooterHero";
+import Testimonial from "@/components/Testimonial";
+import FaqSection from "@/components/FaqSection";
 export default function Home() {
+  const qnaData=[
+    {
+      question:"Do You Offer Any Trials?",
+      answer:`Yes, we do! To ensure that you get to experience our excellent services with no commitment, 
+      we offer a 1-week trial pass to anyone interested. This pass allows you to try out any classes 
+      we offer, so you can know exactly what to expect.`
+    },
+    {
+      question:"Will I Learn Self-Defence?",
+      answer:`At Rage Fitness, we never advocate the use of violence. However, we do teach everyone the 
+      skills necessary to learn how to defend themselves in a life-threatening situation. Since all our 
+      students are taught by former professional combat sports athletes and world-renowned 
+      combat sports coaches, you can be sure to learn both crucial effective techniques and gain a 
+      lot of confidence.`
+    },
+    {
+      question:"How Do I Sign Up?",
+      answer:`Signing up with us is easy! All you have to do is give us a call and book your gym tour, along 
+      with your class choice. When you come to the fitness center for your tour, you can then sign up 
+      in person with our team, for a 1-week trial FULL Access to our classes. We look forward to 
+      meeting you and starting your fitness journey!`
+    },
+  ]
   const hero2paragraph = `At Rage fitness, we offer the best-rated classes for MMA in Kathmandu, Nepal. Through our hard work, specialist instructors, high-grade equipment, and passion for helping people learn, we have managed to create a community that welcomes all levels and ages. You won’t find any other fitness centre in the area that offers our high-quality classes for the fantastic prices we have. We are the area’s number one choice for fitness centre's, so don’t miss out!`;
   return (
     <div className="w-screen ">
@@ -55,6 +80,8 @@ export default function Home() {
         animation={true}
       />
       <TrainerSection/>
+      <Testimonial/>
+      <FaqSection qnaData={qnaData}/>
       <FooterHero/>
       </div>
      

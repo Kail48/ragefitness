@@ -67,8 +67,8 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="hidden w-screen py-6 bg-black text-white md:flex  justify-center items-center md:flex-row md:justify-around ">
-        <div className="py-2 w-64 md:w-64 flex flex-col justify-center items-center md:items-start">
+      <div className="hidden w-screen py-6 bg-black text-white md:flex  justify-center   md:flex-row md:justify-around ">
+        <div className=" w-64 md:w-64 flex flex-col  items-center md:items-start">
           <Image
             height={50}
             width={183}
@@ -81,7 +81,7 @@ export default function Footer() {
             everyone regardless of age or previous experience.
           </p>
         </div>
-        <div className="flex-flex-col items-center justify-center font-para text-[16px]">
+        <div className="flex-flex-col  justify-center font-para text-[16px]">
           <h1 className="font-header mb-2"> QUICKLINKS</h1>
           {quicklinks.map((link,index) => (
             <Link key={index} href={link.link}>

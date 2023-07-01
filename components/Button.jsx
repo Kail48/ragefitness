@@ -14,7 +14,7 @@ export default function Button({ text, size, fill, isLink, action, to }) {
   const sizeStyle = {
     sm: "w-full h-12 md:w-48 md:h-12 px-4 text-[12px]",
     md: "w-full h-12 md:w-64 md:h-14 py-2 px-2 text-[12px]",
-    lg: "",
+    lg: "w-84 h-12 md:w-96 md:h-16 py-2 px-2 text-[20px]",
   };
   return (
     <>
