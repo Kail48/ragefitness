@@ -34,13 +34,14 @@ export default function Hero({
     <div className="w-full md:flex px-10 mt-12 mb-8 md:mb-16 justify-center items-center md:mt-12 bg-black text-white">
       {isLeft ? (
         <>
-          <Image
+          {image?<Image
             src={image}
             alt="image"
             height={imageHeight}
             width={imageWidth}
             priority
-          />
+            className="order-first md:order-none "
+          />:<div></div>}
 
           <div className="px-4 ">
             {header ? (
@@ -159,14 +160,14 @@ export default function Hero({
               )}
             </div>
           </div>
-          <Image
-            className=""
+          {image?<Image
+            className="order-first md:order-none"
             src={image}
             alt="image"
             height={imageHeight}
             width={imageWidth}
             priority
-          />
+          />:<div></div>}
         </>
       )}
     </div>

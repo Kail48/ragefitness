@@ -1,16 +1,17 @@
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
+
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 import hero1Image from "../public/images/hero1image.png";
 import hero2Image from "../public/images/hero2image.png";
 import hero3Image from "../public/images/hero3image.png";
-import Button from "@/components/Button";
+
 import Loading from "./loading";
-import ClassesSection from "@/components/ClassesSection";
-import TrainerSection from "@/components/TrainerSection";
-import FooterHero from "@/components/FooterHero";
-import Testimonial from "@/components/Testimonial";
-import FaqSection from "@/components/FaqSection";
+import ClassesSection from "../components/ClassesSection";
+import TrainerSection from "../components/TrainerSection";
+import FooterHero from "../components/FooterHero";
+import Testimonial from "../components/Testimonial";
+import FaqSection from "../components/FaqSection";
+import Footer from "../components/Footer";
 export default function Home() {
   const qnaData=[
     {
@@ -85,7 +86,7 @@ export default function Home() {
       <FooterHero/>
       </div>
      
-      <Footer />
+        <Footer/>
     </div>
   );
 }

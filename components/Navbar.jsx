@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Button from "./Button";
-
+import Link from "next/link";
 const Navbar = ({ fontColor, fontSize, fontWeight }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showSubmenu, setShowSubmenu] = useState(false);
@@ -43,11 +43,11 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
       submenu: [
         {
           name: "About",
-          link: "/",
+          link: "/about",
         },
         {
           name: "About Owner",
-          link: "/",
+          link: "/about-owner",
         },
       ],
     },
@@ -123,17 +123,17 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
                   {showSubmenu && tappedMenu === link.name && (
                     <div className="flex flex-col mt-2 text-sm gap-y-2 py-2 bg-lightyellow w-screen text-darkblack items-center transition-all duration-100">
                       {link.submenu.map((submenuItem, index) => (
-                        <a key={index} href={submenuItem.link} className="">
+                        <Link key={index} href={submenuItem.link} className="">
                           {submenuItem.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
                 </div>
               ) : (
-                <a href={link.link} className="text-md">
+                <Link href={link.link} className="text-md">
                   {link.name.toUpperCase()}
-                </a>
+                </Link>
               )}
             </React.Fragment>
           ))}
@@ -210,13 +210,13 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
                       {isOpen && hoveredLink === link.name ? (
                         <div className="absolute  hidden mt-2 w-48 bg-customblack rounded-md overflow-hidden shadow-lg  md:block">
                           {link.submenu.map((submenuItem, index) => (
-                            <a
+                            <Link
                               key={index}
                               href={submenuItem.link}
                               className="block px-4 py-2 font-nav text-md text-white hover:bg-lightyellow hover:text-customblack"
                             >
                               {submenuItem.name}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       ) : (
@@ -224,12 +224,12 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
                       )}
                     </div>
                   ) : (
-                    <a
+                    <Link
                       href={link.link}
                       className="hover:bg-customblack hover:text-white px-3 py-2 rounded-md text-nav font-nav"
                     >
                       {link.name.toUpperCase()}
-                    </a>
+                    </Link>
                   )}
                 </React.Fragment>
               ))}
