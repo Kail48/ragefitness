@@ -58,40 +58,44 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
       submenu: [
         {
           name: "Striking",
-          link: "/",
+          link: "/striking",
+        },
+        {
+          name: "Grappling",
+          link: "/grappling",
         },
         {
           name: "Fitness",
-          link: "/",
+          link: "/fitness",
         },
         {
           name: "Kids",
-          link: "/",
+          link: "/kids",
         },
         {
           name: "Results based",
-          link: "/",
+          link: "/results-based",
         },
       ],
     },
     {
       name: "Schedule",
-      link: "/",
+      link: "/schedule",
       submenu: false,
     },
     {
       name: "Coaches",
-      link: "/",
+      link: "/coaches",
       submenu: false,
     },
     {
       name: "FAQ",
-      link: "/",
+      link: "/faq",
       submenu: false,
     },
     {
       name: "Contact",
-      link: "/",
+      link: "/contact",
       submenu: false,
     },
   ];

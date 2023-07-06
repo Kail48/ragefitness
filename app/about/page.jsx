@@ -11,21 +11,39 @@ export default function About() {
     <div className="w-screen ">
       <Navbar />
       <div className=" bg-black font-header text-header3 md:text-header text-lightyellow text-center py-12 overflow-x-hidden">
-        <Hero
-          isLeft={false}
-          image={heroImage}
-          header={["ABOUT", "RAGE FITNESS"]}
-          subtitle="IN THE CAGE AND IN LIFE - COME TRAIN WITH US"
-          button1Text="GET 1 WEEK TRIAL PASS"
-          button2Text="+977 - 9812345678"
-          imageHeight={571}
-          imageWidth={545}
-          animation={false}
-        />
+      <div className=" bg-black font-header text-header3 md:text-header text-lightyellow text-center py-12 overflow-x-hidden">
+        <div className="w-full md:flex px-10 mt-12 mb-8 md:mb-16  items-center md:mt-12 bg-black text-white">
+          <div className="md:px-4">
+            <div className="font-header text-header2 md:text-header text-start">
+              <span className="text-white">LEARN ALL TYPES</span>
+              <br />
+              <span className="text-red">OF STRIKING</span>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-y-4 md:gap-y-0 gap-x-6 py-2">
+              <Button
+                text={"GET 1 WEEK TRIAL PASS"}
+                isLink={true}
+                to="/"
+                fill={true}
+                size="md"
+              />
+
+              <Button
+                text={"+977 - 9812345678"}
+                isLink={true}
+                to="/"
+                fill={false}
+                size="md"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
         <div className="w-full md:flex px-10 mt-12 mb-8 md:mb-16 gap-x-16 md:mt-20 bg-black text-white">
           <div className="w-96 h-full">
-            <Videoplayer src={"/videos/aboutGymVid.mp4"} />
+            <Videoplayer src={"/videos/aboutGymVid.m4v"} />
           </div>
           <div className="px-4 ">
             <div className="font-header leading-6 text-[18px]  md:text-header2 text-start text-lightyellow whitespace-nowrap">

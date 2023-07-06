@@ -6,6 +6,7 @@ export default function Loading() {
         <div className='w-48 h-48 bg-black rounded-full flex justify-center items-center animate-bounce'>
            <div className='relative w-32 h-12'>
            <Image 
+           priority
             alt="logo"
             src="/images/logo.png"
             fill={true}

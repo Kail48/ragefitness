@@ -125,7 +125,8 @@ export default function Hero({
               <div className="font-header leading-6 text-[18px] mt-4 md:text-header2 text-start text-lightyellow whitespace-nowrap">
                 <span className="">{secondaryHeader[0]}</span>
                 <br />
-                <span className="">{secondaryHeader[1]}</span>
+                <span className="">{secondaryHeader[1]}</span><br/>
+                {secondaryHeader[2]?  <span className="">{secondaryHeader[2]}</span>:<></>}
               </div>
             ) : (
               <div></div>
