@@ -31,7 +31,7 @@ export default function Hero({
 }) {
   console.log(imageHeight, imageWidth);
   return (
-    <div className="w-full md:flex px-10 mt-12 mb-8 md:mb-16 justify-center items-center md:mt-12 bg-black text-white">
+    <div className="w-full md:flex px-10 mt-12 mb-8 md:mb-16 justify-center md:gap-x-10 items-center md:mt-12 bg-black text-white">
       {isLeft ? (
         <>
           {image?<Image
@@ -66,13 +66,17 @@ export default function Hero({
                 <span className="">{secondaryHeader[0]}</span>
                 <br />
                 <span className="">{secondaryHeader[1]}</span>
+                {secondaryHeader[2]?<><br />
+                <span className="">{secondaryHeader[2]}</span></>:<></>}
+                {secondaryHeader[3]?<><br />
+                <span className="">{secondaryHeader[3]}</span></>:<></>}
               </div>
             ) : (
               <div></div>
             )}
             {paragraph ? (
               <div>
-                <p className="font-para text-para text-justify whitespace-normal overflow-hidden mt-4">
+                <p className="font-para text-para text-justify whitespace-normal overflow-hidden mt-4 md:pr-10">
                   {paragraph}
                 </p>
               </div>
@@ -125,15 +129,18 @@ export default function Hero({
               <div className="font-header leading-6 text-[18px] mt-4 md:text-header2 text-start text-lightyellow whitespace-nowrap">
                 <span className="">{secondaryHeader[0]}</span>
                 <br />
-                <span className="">{secondaryHeader[1]}</span><br/>
-                {secondaryHeader[2]?  <span className="">{secondaryHeader[2]}</span>:<></>}
+                <span className="">{secondaryHeader[1]}</span>
+                {secondaryHeader[2]?<><br />
+                <span className="">{secondaryHeader[2]}</span></>:<></>}
+                {secondaryHeader[3]?<><br />
+                <span className="">{secondaryHeader[3]}</span></>:<></>}
               </div>
             ) : (
               <div></div>
             )}
             {paragraph ? (
               <div>
-                <p className="font-para text-para text-justify whitespace-normal overflow-hidden mt-4">
+                <p className="font-para text-para text-justify whitespace-normal overflow-hidden mt-4 md:pr-10">
                   {paragraph}
                 </p>
               </div>

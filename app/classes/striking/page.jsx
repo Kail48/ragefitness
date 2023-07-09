@@ -1,46 +1,46 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import Hero from "../../components/Hero";
-import Button from "../../components/Button";
-import hero2Image from "../../public/images/grapplingHero2Image.png";
-import grapplingHero1Image from "../../public/images/grapplingHero1Image.png";
-import grapplingBBJImage from "../../public/images/grapplingBbjImage.png";
-import grapplingNogiImage from "../../public/images/grapplingNo-giImage.png";
-import grapplingWrestlingImage from "../../public/images/grapplingWrestlingImage.png";
-import ClassesSection from "../../components/ClassesSection";
-import TrainerSection from "../../components/TrainerSection";
-import trainer1 from "../../public/images/tonyja.jpeg";
-import test1img from "../../public/images/testimonial1img.png";
-import test2img from "../../public/images/testimonial2img.png";
-import test3img from "../../public/images/testimonial3img.png";
-import Testimonial from "../../components/Testimonial";
-import FaqSection from "../../components/FaqSection";
-import FooterHero from "../../components/FooterHero";
-import Footer from "../../components/Footer";
+import Navbar from "../../../components/Navbar";
+import Hero from "../../../components/Hero";
+import Button from "../../../components/Button";
+import hero2Image from "../../../public/images/hero3image.png";
+import strikeHeroImage from "../../../public/images/strikeHeroImage.png";
+import strikeBoxingImage from "../../../public/images/strikeBoxingImage.png";
+import strikeMmaImage from "../../../public/images/strikeMmaImage.png";
+import strikeMuayThaiImage from "../../../public/images/strikeMuayThaiImage.png";
+import ClassesSection from "../../../components/ClassesSection";
+import TrainerSection from "../../../components/TrainerSection";
+import trainer1 from "../../../public/images/tonyja.jpeg";
+import test1img from "../../../public/images/testimonial1img.png";
+import test2img from "../../../public/images/testimonial2img.png";
+import test3img from "../../../public/images/testimonial3img.png";
+import Testimonial from "../../../components/Testimonial";
+import FaqSection from "../../../components/FaqSection";
+import FooterHero from "../../../components/FooterHero";
+import Footer from "../../../components/Footer";
 export default function Page() {
-  const qnaData = [
-    {
-      question: "Do I Need To Be Fit To Do BJJ?",
-      answer: `The great thing about BJJ is that you can train it regardless of age and fitness levels. You will 
-      build stamina, flexibility, agility, and muscle strength through doing different types of exercises, 
-      so even if you don’t start fit, you soon will be! It is all about technique rather than strength, and 
-      anyone can learn the necessary skills as long as they put in the hard work.`,
-    },
-    {
-      question: "What Training Gear Is Required For Grappling?",
-      answer: `AWe advise that you wear whatever you feel most comfortable in. In BJJ, it is compulsory to wear 
-      a Gi; however, you can wear a rashguard, tank top, t-shirt, and shorts or leggings in No-Gi. In 
-      wrestling, you can wear shorts, a t-shirt, and wrestling shoes.`,
-    },
-    {
-      question: "Will I Learn Self-Defense With BJJ?",
-      answer: `When you sign up for the classes we offer for BJJ in Temecula CA, you will learn a lot of useful 
-      self-defensive skills from our highly qualified instructors. So, while at Dan Henderson’s Athletic 
-      Fitness Center, we never advocate the use of violence. You will be able to use your acquired BJJ 
-      knowledge in real-world settings if you are ever in a life-threatening situation. Self-defense is 
-      an extremely important tool to learn, and you will receive the best training with us.`,
-    },
-  ];
+    const qnaData = [
+        {
+          question: "Do You Offer Any Trials?",
+          answer: `Yes, we do! To ensure that you get to experience our excellent services with no commitment, 
+          we offer a 1-week trial pass to anyone interested. This pass allows you to try out any classes 
+          we offer, so you can know exactly what to expect.`,
+        },
+        {
+          question: "Will I Learn Self-Defence?",
+          answer: `At Rage Fitness, we never advocate the use of violence. However, we do teach everyone the 
+          skills necessary to learn how to defend themselves in a life-threatening situation. Since all our 
+          students are taught by former professional combat sports athletes and world-renowned 
+          combat sports coaches, you can be sure to learn both crucial effective techniques and gain a 
+          lot of confidence.`,
+        },
+        {
+          question: "How Do I Sign Up?",
+          answer: `Signing up with us is easy! All you have to do is give us a call and book your gym tour, along 
+          with your class choice. When you come to the fitness center for your tour, you can then sign up 
+          in person with our team, for a 1-week trial FULL Access to our classes. We look forward to 
+          meeting you and starting your fitness journey!`,
+        },
+      ];
   const testimonialData = [
     {
       name: "KRISHNA DHAKAL",
@@ -87,18 +87,18 @@ export default function Page() {
   ];
   const cardsData = [
     {
-      text: "BBJ",
-      img: grapplingBBJImage,
+      text: "MMA",
+      img: strikeMmaImage,
       link: "/",
     },
     {
-      text: "NO-GI",
-      img: grapplingNogiImage,
+      text: "MUAY THAI",
+      img: strikeMuayThaiImage,
       link: "/",
     },
     {
-      text: "Wrestling",
-      img: grapplingWrestlingImage,
+      text: "BOXING",
+      img: strikeBoxingImage,
       link: "/",
     },
   ];
@@ -112,7 +112,7 @@ export default function Page() {
             <div className="font-header text-header2 md:text-header text-start">
               <span className="text-white">LEARN ALL TYPES</span>
               <br />
-              <span className="text-red">OF GRAPPLING</span>
+              <span className="text-red">OF STRIKING</span>
             </div>
 
             <div className="flex flex-col md:flex-row gap-y-4 md:gap-y-0 gap-x-6 py-2">
@@ -136,9 +136,12 @@ export default function Page() {
         </div>
         <Hero
           isLeft={true}
-          image={grapplingHero1Image}
-          secondaryHeader={[`GET THE BEST TRAINING FOR`, `BJJ IN Nepal`]}
-          paragraph={`Whether you are looking to tone up, get fit, or for self-defense reasons, at Dan Henderson’s Athletic Fitness Center, we have the best BJJ in Temecula CA. BJJ is Brazilian jiu-jitsu, the art of grappling. As a martial artist, you will learn to take your opponent down using leverage and positioning. You will also learn about pressure points on the human body, how to defend against attacks, and how to submit your opponent.`}
+          image={strikeHeroImage}
+          secondaryHeader={[
+            `JOIN THE BEST MMA FITNESS `,
+            `GYM IN Nepal (KATHMANDU)`,
+          ]}
+          paragraph={hero1Text}
           button1Text="GET 1 WEEK TRIAL PASS"
           imageHeight={615}
           imageWidth={508}
@@ -146,7 +149,7 @@ export default function Page() {
         />
         <ClassesSection
           cardsData={cardsData}
-          header1={`GRAPPLING PROGRAMS WE`}
+          header1={`STRIKING PROGRAMS WE`}
           header2={`OFFER FOR`}
           header3={`EVERY AGE`}
           subtitle={`We offer programs for every age. Whether you are a beginner or an expert, we have something 
@@ -157,30 +160,29 @@ export default function Page() {
           image={hero2Image}
           button1Text="GET 1 WEEK TRIAL PASS"
           secondaryHeader={[
-            "MASTER THE ART OF GRAPPLING",
-            "WITH OUR TEMECULA CA BBJ",
-            "CLASSES",
+            "MASTER THE ART OF STANDUP",
+            "WITH OUR TEMECULA",
+            "KICKBOXING CLASSES",
           ]}
-          paragraph={`At Rage Fitness Center, you can join our range of classes for Brazilian jiu-jitsu wrestling and master the art of grappling in a friendly, fun, and safe environment. You’ll be taught by former 
-          combat athletes and coaches, so you know that your time will be well spent. If you’re interested in mastering this fighting style and want to learn from an experienced team, our BJJ in Temecula CA classes welcomes students of all levels. We offer classes for adults, teens, and children so everyone can improve their skills.`}
+          paragraph={`When you train with our fitness center for MMA in Temecula CA, you get plenty of benefits. First and foremost, our specially designed classes cater to any age and skill level. The perks continue with our talented instructor list, including former professional combat athletes and coaches, and a huge range of classes to choose from for MMA and fitness. At Dan Henderson’s Athletic Fitness Center, you’ll be a part of a supportive community from the teachers and fellow students, and all at extremely competitive prices!`}
           imageHeight={571}
           imageWidth={545}
           animation={true}
         />
         <TrainerSection
           header1={`OUR WOLRD CLASS`}
-          header2={`GRAPPLING COACHES`}
+          header2={`STRIKING COACHES`}
           slides={slides}
         />
         <Testimonial
           testimonialData={testimonialData}
           headerWhite={`REVIEWS FROM OUR `}
-          headerLight={`BBJ STUDENTS`}
+          headerLight={`KICKBOXING STUDENTS`}
         />
         <FaqSection qnaData={qnaData} />
         <FooterHero />
       </div>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

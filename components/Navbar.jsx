@@ -58,23 +58,23 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
       submenu: [
         {
           name: "Striking",
-          link: "/striking",
+          link: "/classes/striking",
         },
         {
           name: "Grappling",
-          link: "/grappling",
+          link: "/classes/grappling",
         },
         {
           name: "Fitness",
-          link: "/fitness",
+          link: "/classes/fitness",
         },
         {
           name: "Kids",
-          link: "/kids",
+          link: "/classes/kids",
         },
         {
-          name: "Results based",
-          link: "/results-based",
+          name: "Result-based",
+          link: "/classes/result-based",
         },
       ],
     },
@@ -86,6 +86,11 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
     {
       name: "Coaches",
       link: "/coaches",
+      submenu: false,
+    },
+    {
+      name: "Fighter",
+      link: "/",
       submenu: false,
     },
     {
@@ -143,8 +148,8 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
           ))}
         </div>
       )}
-      <div className="max-w-7xl mx-auto px-4 md:py-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-x-10 h-16 justify-between">
+      <div className="max-w-7xl mx-auto md:py-4 md:px-4">
+        <div className="flex items-center  h-16 justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0 hidden md:block">
               <Image
