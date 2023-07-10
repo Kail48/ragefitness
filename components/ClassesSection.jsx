@@ -2,7 +2,7 @@ import React from "react";
 import ClassCard from "./ClassCard";
 
 export default function ClassesSection({cardsData,header1,header2,header3,subtitle}) {
-  
+
   return (
     <div className="w-screen bg-red text-white py-8 md:py-16">
       <div className="font-header md:text-6xl text-center leading-6">

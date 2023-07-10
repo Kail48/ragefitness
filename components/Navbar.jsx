@@ -90,7 +90,7 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
     },
     {
       name: "Fighter",
-      link: "/",
+      link: "/fighters",
       submenu: false,
     },
     {
@@ -149,7 +149,7 @@ const Navbar = ({ fontColor, fontSize, fontWeight }) => {
         </div>
       )}
       <div className="max-w-7xl mx-auto md:py-4 md:px-4">
-        <div className="flex items-center  h-16 justify-between">
+        <div className="flex md:gap-x-2 items-center  h-16 justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0 hidden md:block">
               <Image
