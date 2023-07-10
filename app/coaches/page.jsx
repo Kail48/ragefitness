@@ -80,7 +80,7 @@ export default function About() {
         </div>
 
         <div>
-          <div className="font-header text-[64px] leading-[80px] text-center md:px-6">
+          <div className="font-header text-header2 leading-snug md:text-[64px] md:leading-[80px] text-center md:px-6">
             <h1 className="text-white">OUR WORLD CLASS</h1>
             <h1 className="text-lightyellow"> COACHES & INSTRUCTORS</h1>
           </div>

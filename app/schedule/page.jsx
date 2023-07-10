@@ -42,7 +42,7 @@ export default function About() {
       </div>
 
       <div>
-        <div className="font-header text-header text-center">
+        <div className="font-header text-header2 md:text-header text-center">
             <h1 className="text-white">MARTIAL</h1>
             <h1 className="text-lightyellow">ARTS SCHEDULE</h1>
         </div>
